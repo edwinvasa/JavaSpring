@@ -1,7 +1,5 @@
 package com.platzi.platzi.market.domain;
 
-import com.platzi.platzi.market.domain.Category;
-
 public class Product {
 
     private int productId;
@@ -28,11 +26,11 @@ public class Product {
         this.name = name;
     }
 
-    public int getcategoryId() {
+    public int getCategoryId() {
         return categoryId;
     }
 
-    public void setIdCategoria(int categoryId) {
+    public void setCategoryId(int categoryId) {
         this.categoryId = categoryId;
     }
 

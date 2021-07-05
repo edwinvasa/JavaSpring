@@ -8,8 +8,7 @@ import java.util.Optional;
 
 public interface ProductoCrudRepository extends CrudRepository<Producto, Integer> {
 
-    // ejemplo de QueryMethods @Query(value = "SELECT * FROM productos WHERE id_categoria = ?", nativeQuery = true)
     List<Producto> findByIdCategoriaOrderByNombreAsc(int idCategoria);
 
-    Optional<List<Producto>>  findByIdCantidadStockLessThanAndEstado(int cantidadStock, boolean estado);
+    Optional<List<Producto>>  findByCantidadStockLessThanAndEstado(int cantidadStock, boolean estado);
 }
