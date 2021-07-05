@@ -79,4 +79,13 @@ public class Compra {
     public void setEstado(String estado) {
         this.estado = estado;
     }
+
+    public List<ComprasProducto> getProductos() {
+        return productos;
+    }
+
+    public void setProductos(List<ComprasProducto> productos) {
+        this.productos = productos;
+    }
+
 }
