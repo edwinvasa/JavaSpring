@@ -13,7 +13,7 @@ public class Cliente {
     private String nombre;
     private String apellidos;
     private String celular;
-    private Integer direccion;
+    private String direccion;
 
     @Column(name = "correo_electronico")
     private String correoElectronico;
@@ -53,11 +53,11 @@ public class Cliente {
         this.celular = celular;
     }
 
-    public Integer getDireccion() {
+    public String getDireccion() {
         return direccion;
     }
 
-    public void setDireccion(Integer direccion) {
+    public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
 

@@ -24,5 +24,5 @@ public interface PurchaseItemMapper {
             @Mapping(target = "producto", ignore = true),
             @Mapping(target = "id.idCompra", ignore = true)
     })
-    ComprasProducto toComprasProducto(ComprasProducto producto);
+    ComprasProducto toComprasProducto(PurchaseItem purchaseItem);
 }
